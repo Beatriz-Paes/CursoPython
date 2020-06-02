@@ -47,7 +47,7 @@ print('mínimo', min(l3))
 
 ############################################
 l4 = list(range(0, 50, 4))
-print(l4)
+print('l4', l4)
 
 soma = 0
 for valor in l4:
