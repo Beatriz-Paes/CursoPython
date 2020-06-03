@@ -24,11 +24,9 @@ multi1 = list(range(10, 1, -1))
 multi2 = list(range(11, 1, -1))
 
 while True:
-
     conta = 0
     acumulador = 0
     calculo = 0
-
     cpf_ = (input('Digite seu CPF (Apenas números): '))
 
     if cpf_.isdigit() and len(cpf_) == 11:
@@ -40,11 +38,9 @@ while True:
 
     #  Cálculo para dígito 1:
     for n, i in enumerate(novo_cpf):
-
         i = int(i)
         conta = i * multi1[n]
         acumulador = acumulador + conta
-
     calculo = 11 - (acumulador % 11)
 
     if calculo > 9:
@@ -53,17 +49,14 @@ while True:
         novo_cpf.insert(9, str(calculo))
 
     #  Cálculo para dígito 2:
-
     conta = 0
     acumulador = 0
     calculo = 0
 
     for n, i in enumerate(novo_cpf):
-
         i = int(i)
         conta = i * multi2[n]
         acumulador = acumulador + conta
-
     calculo = 11 - (acumulador % 11)
 
     if calculo > 9:
