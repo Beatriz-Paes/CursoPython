@@ -16,7 +16,10 @@ def multiplica(lista):
     return r
 
 
-lista = [1, 2, 3, 4, 5]
+if __name__ == '__main__':
+    lista = [1, 2, 3, 4, 5]
 
-print(dobra_lista(lista))
-print(multiplica(lista))
+    print(dobra_lista(lista))
+    print(multiplica(lista))
+
+    print(__name__)
