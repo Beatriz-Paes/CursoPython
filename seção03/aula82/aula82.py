@@ -1,7 +1,7 @@
 # Pacotes e módulos em Python
 
-from vendas.preco import aumento, reducao
-import vendas.formata.preco as preco2
+from seção03.aula82.vendas.preco import aumento, reducao
+import seção03.aula82.vendas.formata.preco as preco2
 
 preco = 49.90
 preco_com_aumento = aumento(preco, 15, formata=True)

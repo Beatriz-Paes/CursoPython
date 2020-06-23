@@ -1,4 +1,4 @@
-from vendas.formata import preco
+from seção03.aula82.vendas.formata import preco
 
 
 def aumento(valor, porcentagem, formata=False):
