@@ -1,4 +1,6 @@
-from CursoPython.seção03.aula88 import cnpj
+# Desafio - Valide um CNPJ
+
+from CursoPython.seção03.aula88_89 import cnpj
 
 
 while True:
