@@ -1,6 +1,6 @@
 # Gerador de CNPJ a partir do código anterior
 
-from CursoPython.seção03.aula90 import cnpj
+from seção03.aula90 import cnpj
 
 
 cnpj1 = input('Digite um CNPJ: ')
