@@ -1,6 +1,6 @@
 # POO - Classes
 
-from CursoPython.seção04.aula92.pessoas import Pessoa
+from seção04.aula92.pessoas import Pessoa
 
 # p1.comer('maçã')
 # p1.falar('POO')
