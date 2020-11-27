@@ -1,4 +1,19 @@
 # Unittest #1
+try:
+    import sys
+    import os
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../../'
+            )
+        )
+    )
+
+except:
+    raise
 
 import unittest
 from seção14.aula239.calculadora import soma
@@ -24,7 +39,7 @@ class TestCalculadora(unittest.TestCase):
 
                 self.assertEqual(soma(x, y), saida)
 
-    def test_soma_x_nao_e_int_ou_float_deve_retornar_assetionerror(self):
+    def test_soma_x_nao_e_int_ou_float_deve_retornar_assertionerror(self):
         with self.assertRaises(AssertionError):
             soma('11', 0)
 
